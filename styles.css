@@ -1,0 +1,156 @@
+body {
+    min-width: 500px;
+    height: fit-content;
+    border: 1px solid #ccc;
+    background: linear-gradient(
+      45deg,
+      rgb(123, 123, 226) 0em,
+      white 40em, 
+      rgb(226, 85, 226) 
+    );
+}
+
+header {
+  text-align: center;
+  height: 50px;
+  width: auto;
+  font-family: Lobster, serif;
+  color: red;
+  background: linear-gradient(
+    180deg,
+    yellow 0em,
+    black 5em
+  );
+  padding: 20px 20px 40px;
+  margin: auto;
+  border: 1px solid #ccc;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid red;
+  align-self: auto;
+}
+
+
+
+.intro-container {
+  align-self: center;
+  order: 2;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: auto;
+  border: 1px solid blue;
+  min-width: 60%;
+  height: auto;
+  margin: auto;
+  padding: 5px;
+  justify-content: space-evenly;
+  justify-items: space-evenly;
+  align-items: space-evenly;
+  align-content: space-evenly;
+  background-color: gray;
+}
+
+.intro-container p {
+  width: 500px;
+  text-align: justify;
+  border: 1px solid green;
+  min-width: 400px;
+  height: auto
+
+}
+
+side {
+  order: 3;
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 20%;
+  height: 100%;
+  padding: 5px;
+  margin: auto;
+  border: 1px solid #ccc;
+
+}
+
+side a p {
+    
+    border: 1px solid grey;
+    height: 40px;
+    background-color: rgb(226, 198, 123);
+    border-radius: 5px;
+    
+}
+
+side a p:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 2px grey;
+}
+
+.box {
+  order: 1;
+  max-width: 20%;
+  height: fit-content;
+
+  padding: 5px;
+  margin: auto;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  text-align: center;
+}
+
+.yellow-box {
+    background-color: yellow;
+    padding: 10px;
+}
+
+.red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+}
+
+.blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    margin: 30px 20px 20px;
+}
+
+#ball {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+
+  /* @keyframes bounce{
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 249px;
+      width: 130px;
+      height: 70px;
+    }
+    100% {
+      top: 0px;
+    }
+  } */
